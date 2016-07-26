@@ -23,7 +23,8 @@ public class PersonDatabase {
                 new Person("Bernadette"), 
                 new Person("Raj"), 
                 new Person("Priya"),
-                new Person("Rossi-46"));
+                new Person("Rossi-46"),
+                new Person("Jean"));
     }
 
     public Person[] currentList() {
@@ -34,7 +35,6 @@ public class PersonDatabase {
         if (id < persons.size()) {
             return persons.get(id);
         }
-
         throw new NotFoundException("Person with id \"" + id + "\" not found.");
     }
 }
